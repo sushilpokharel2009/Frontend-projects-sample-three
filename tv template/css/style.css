@@ -1,0 +1,248 @@
+/*style*/
+		html{
+			box-sizing: border-box;
+		}
+		*,*:before,*:after{
+			box-sizing: inherit;
+		}
+		body{
+			font: 14px/1.5 Helvetica, Arial, sans-serif;
+			margin: 0;
+		}
+		h1,h2,h3,h4,h5,h6{
+			margin: 0 0 10px;
+		}
+		p{
+			margin: 0 0 5px;
+		}
+		ul{
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+		img{
+			max-width: 100%;
+			height: auto;
+		}
+		a{
+			text-decoration: none;
+			color: #fff;
+		}
+		a:hover{
+			text-decoration: underline;
+			color: #eee;
+		}
+		.clearfix:after{
+			margin: 0;
+			clear: both;
+			display: block;
+			content: '';
+		}
+		#wrapper{
+			position: relative;
+			overflow: hidden;
+			margin: 0;
+		}
+		#container{
+			margin:0 auto;
+			width:800px;
+			box-shadow: 0px 10px 10px 0px rgba(0,0,0,.3);
+			border-left: 15px solid rgba(240,100,161,.5);  
+
+		}
+		.top-menu{
+			background:#602b61;
+			padding: 15px;
+			border: 10px solid rgb(14, 189, 197); 
+		}
+		.grapeline-menu{ 
+			text-align: right;
+			padding: 40px;
+		}
+		.grapeline-menu li{
+			display: inline-block;
+			margin: 0 -5px 0 0;
+		}
+		.grapeline-menu li a{
+			display: inline-block;
+			padding: 10px;
+		}
+		.grapeline-menu li:after{
+			content: '';
+			height: 10px;
+			width: 2px;
+			background: #fff;
+			display: inline-block;
+		}
+		.grapeline-menu li:last-child:after{
+			display: none;
+		}
+		/* Logo section*/
+		 .logo-section{
+			padding: 40px 0 0 10px;
+			margin: 100px 0;
+			background: linear-gradient(to left, red,yellow,green);
+		 }
+		 .logo-left{
+		 	float: left;
+		 	width:200px;
+		 }
+		 .menu2-right{
+		 	float: right;
+		 	width:calc(100% - 200px);
+		 }
+		 .menu-float{
+		 	border-bottom: 1px solid grey;
+		 	padding-bottom: 15px;
+		 	padding-left: 30px;
+		 }
+		 .menu-float li{
+		 	display: inline-block;		
+		 }
+		 .menu-float li a{
+		 	color: deeppink;
+		 	background:#6bf442;	 	
+		 }
+			/*	 apple-section*/
+		.apple-section{
+			background: #dedfe0;
+			padding: 10px;
+		}
+		.apple-section:hover{
+			background:#41ebf4;
+			color: #000; 
+		}
+		.apple-pic{
+			float: left;
+			width: 270px;
+			padding-top: 60px;
+		}
+		.catchy-title{
+			width: calc(100% - 250px);
+			margin-left: 260px;
+			padding: 80px;
+		}
+		.read-more{
+			background:red;
+			color: #fff; 
+			padding: 18px;
+			border-radius: 5px;
+			margin-top: 20px;
+		}
+		/*colum-section*/ 
+		.colum-section{
+			padding: 120px 20px 20px;
+			background: rgba(234,48,23,.1);
+			height: 400px;
+		}
+		.colums{
+			width: 24%;
+			display: inline-block;
+		}
+		.colums h3{
+			padding-bottom: 15px;
+			border-bottom: 1px solid grey;
+			margin-right: 15px;
+			text-align: center;
+		}
+		.colums:last-child{
+			margin-left: 10px;
+		}
+		.long-line{
+			text-align: center;
+			font-weight: bold;
+			font-size: 40px;
+			margin: 50px 0;
+			color: #f7049e;
+			padding: 10px;
+		}	
+	/*	four-boxes*/
+		.boxes,.float-text{
+			display: inline-block;
+			padding: 20px;
+			background:#e1eded; 
+		}
+		.boxes h4{
+			text-align: left;
+			color: #9ca2ad;
+
+		}
+		.dark{
+			height: 150px;
+			width: 152px;
+			background: #000;
+			text-align: center;
+			color: #fff;
+			padding: 55px;
+		}
+		/*after-four-boxes*/
+		.after-four-boxes{
+			padding: 10px;
+		}
+		.float-text{
+			width: 24%;
+			display: inline-block;
+			margin-left: 4px;
+		}
+		.last-read{
+			color: #602b61;
+		}
+		
+	/*	last-dark-section*/
+		.last-dark-section{
+			background: linear-gradient(to right, red,yellow,green,purple,blue);
+			color: #fff;
+			border-bottom: 1px solid #000;
+			box-shadow: 0 4px 2px -2px purple;
+			position: relative;
+		}
+		.blocks{
+			width: 25%;
+    		float: left;
+    		padding: 25px;
+		}
+		.arrows a{
+			padding: 5px;
+			color: #999;
+		}
+		.arrows li:before{
+			content: '>>';
+			padding: 10px;
+		}
+		.my-arrows{
+	
+		}
+		.twiter img{
+			width: 20px;
+			border-radius: 100%;
+			float: left;
+			padding: 1px;
+			margin-right: 10px;
+			margin-top: 20px;
+		}
+		.news{
+			margin-right: -10px;
+		}
+		/*footer*/
+		.footers{
+			background: linear-gradient(to left, red,yellow,green);
+			padding: 10px;
+			color: #fff;
+		}
+		.my-footer,.kumar{
+			display: inline;
+		}
+		.kumar{
+			text-align: right;
+			padding-top: -10px;
+		}
+		.twitter li a{
+			padding:10px;
+		}
+		.news input, button{
+			padding: 10px;
+			margin-bottom: 5px;
+			border-radius: 5px;
+			background-color: deeppink;
+			color: #fff;
+		}

@@ -1,0 +1,127 @@
+.slider-block {
+	border: 1px solid lighten(#000, 90%);
+	padding: 20px;
+	text-align: center;
+	font-size: 13px;
+	position: relative;
+	margin-top: 20px;
+
+
+	&:hover .slider {
+		transform:scale(1);
+	}
+
+	.new-overlay {
+		position: absolute;
+		top: 0;
+		right: 0;
+		height: 0;
+		width: 0;
+		border-top: 100px solid red;
+		border-left: 100px solid transparent;
+		z-index: 999;
+
+		.text{
+			top: -83px;
+		    right: 15px;
+		    position: absolute;
+		    transform: rotate(45deg);
+		    font-weight: bolder;
+		    font-size: 20px;
+		    color: #fff;
+		}
+	}
+
+	.green {
+		border-top: 100px solid green;
+	}
+}
+
+.price, .description, .collection {
+	padding: 15px 0;
+}
+
+.price {
+	color: $theme-color;
+	font-size: 30px;
+	font-weight: bolder;
+}
+
+.collection{
+	background: lighten(#000, 90%);
+	// padding: 10px 40px;
+}
+
+.wish-list {
+	@include clearfix;
+	padding: 10px 0;
+	border: 1px solid lighten(#000, 90%); 
+	font-size: 12px;
+
+	.list-left, .list-right {
+		float: left;
+		width: 50%;
+	}
+
+}
+
+.slider {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	background: $theme-color;
+	color: #000;
+	transform:scale(0);
+	transition: all linear .5s;
+
+	.price {
+		color: #fff;
+	}
+}
+
+.slider-inner {
+	position: absolute;
+ 	bottom: 10px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+.baz {
+	 margin: 30px 0;
+}
+
+
+
+
+
+// ********************
+#map-canvas {
+	height: 200px;
+	width: 200px;
+}
+
+#content2 {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    color: #fff;
+    text-shadow: 0px 1px #000;
+    box-sizing: border-box;
+    padding: 10px;
+    background: rgba(0, 153, 153, 0.5);
+    border: 2px solid #222;
+    border-radius: 15px;
+    top: 0;
+    left: 50%;
+    margin-left: 100px;
+    z-index: 999;
+
+    @media (max-width: 767px){
+    	width: none !important;
+    }
+}
+

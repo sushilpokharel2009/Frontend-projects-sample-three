@@ -1,0 +1,113 @@
+.sidebar {
+	background: #93de5b;
+	padding-top: 20px;
+	h4 {
+		text-align: center;
+		overflow: hidden;
+		color: $theme-color;
+		
+	}
+	.text {
+		position: relative;
+		display: inline-block;
+		padding: 0 10px;
+
+		&:after,
+		&:before {
+			position: absolute;
+			top: 50%;
+			height: 1px;
+			background: lighten(#000, 90%);
+			content: '';
+		}
+
+		&:after {
+			left: 100%;
+			right: -9999px;
+		}
+
+		&:before {
+			right: 100%;
+			left: -9999px;
+			padding-right: 20px;
+			// width: 200px;
+		}
+	}
+
+	.left{
+		width: 100px;
+	}
+
+	.right{
+		width: 200px;
+	}
+	.fa {
+		display: inline-block;
+		float: right;
+	}
+
+	
+}
+
+	@media (max-width: 991px){
+
+			.sidebar {
+				font-size: 12px !important;
+			}
+		}
+
+
+.main-contents {
+
+	.sub-menu {
+		max-height: 0;
+		overflow: hidden;
+		background: red;
+		color: #fff;
+		transition: all linear .5s;
+	}
+
+	.content {
+		background: rgb(2, 216, 117);
+	}
+
+	.active .sub-menu {
+		 max-height: 300px;
+	}
+
+	li {
+		padding: 10px 0;
+	}
+
+	.left-top, .brands-list{
+		border: 1px solid lighten(#000, 90%);
+		padding: 20px;
+	}
+
+	.brands-list {
+		span {
+			float: right;
+		}
+	}
+
+	.left-top{
+		margin-top: 50px;
+	}
+}
+
+.brands {
+	margin-top: 20px;
+
+}
+
+	@media (max-width: 776px){
+		.sidebar, .slider-block, .wish-list{
+			font-size: 20px !important;
+		}
+
+
+	}
+
+
+
+

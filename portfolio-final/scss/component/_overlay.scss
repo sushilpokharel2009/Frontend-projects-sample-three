@@ -1,0 +1,18 @@
+.overlay {
+	height: 304px;
+	background: lighten(red, 40%);
+	transition: all lineaar .4s;
+	 -ms-transform: matrix(1, -0.3, 0, 1, 0, 0); /* IE 9 */
+    -webkit-transform: matrix(1, -0.3, 0, 1, 0, 0); /* Safari */
+    transform: matrix(1, -0.3, 0, 1, 0, 0); /* Standard syntax */
+	box-shadow: 5px 0px 0 50px;
+
+
+    .text {
+    	position: absolute;
+    	top: 10%;
+    	left: 20%;
+    	font-size: 20px;
+    	text-overflow:scroll;
+    }
+}

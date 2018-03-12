@@ -1,0 +1,64 @@
+@mixin clearfix {
+	&:after {
+		clear: both;
+		display: block;
+		content:'';
+	}
+}
+
+@mixin image {
+	max-width: 100%;
+	height: auto;
+	display: inline-block;
+	vertical-align: top;
+}
+
+@mixin box-center {
+margin: 0 auto;
+}
+
+@mixin un-lists{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+@mixin list-reset {
+	display: inline-block;
+	vertical-align: top;
+}
+@mixin border-rounded ($border-radius: '', $border:'', $background:'', $padding:'', $text-align:'', $color:''){
+	border-radius: $border-radius;
+	border: $border;
+	background: $background;
+	padding: $padding;
+	text-align: $text-align;
+	color: $color;
+}
+
+@mixin anchor-tag($display:'', $padding:'', $text-decoration:''){
+	display:$display;
+	padding: $padding;
+	text-decoration:$text-decoration;
+}
+
+@mixin resets-floats{
+	float: none;
+	width: auto;
+}
+@mixin container-width {
+		max-width: 1170px;
+		margin: 0 auto;
+		padding: 10px 20px;
+}
+
+@mixin bz-radius {
+	background: rgba(196,253,228,1);
+	background: -moz-radial-gradient(center, ellipse cover, rgba(196,253,228,1) 0%, rgba(97,239,183,1) 0%, rgba(97,239,183,1) 100%);
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(196,253,228,1)), color-stop(0%, rgba(97,239,183,1)), color-stop(100%, rgba(97,239,183,1)));
+	background: -webkit-radial-gradient(center, ellipse cover, rgba(196,253,228,1) 0%, rgba(97,239,183,1) 0%, rgba(97,239,183,1) 100%);
+	background: -o-radial-gradient(center, ellipse cover, rgba(196,253,228,1) 0%, rgba(97,239,183,1) 0%, rgba(97,239,183,1) 100%);
+	background: -ms-radial-gradient(center, ellipse cover, rgba(196,253,228,1) 0%, rgba(97,239,183,1) 0%, rgba(97,239,183,1) 100%);
+	background: radial-gradient(ellipse at center, rgba(196,253,228,1) 0%, rgba(97,239,183,1) 0%, rgba(97,239,183,1) 100%);
+
+	}

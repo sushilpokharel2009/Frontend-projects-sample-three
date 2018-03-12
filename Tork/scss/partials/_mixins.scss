@@ -1,0 +1,58 @@
+@mixin clearfix {
+	&:after {
+		clear: both;
+		display: block;
+		content: '';
+	}
+}
+
+@mixin listreset {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+@mixin image {
+	max-width: 100%;
+	height: auto;
+	display: inline-block;
+	vertical-align: top;
+ }
+
+ @mixin links{
+ 	text-decoration: none;
+ 	color: #fff;
+ }
+
+ @mixin button-inside {
+	border: 0;
+	outline: none;
+	color: $default-color;
+	padding: 5px;
+ }
+
+ @mixin button-rounded{
+ 	border-radius: 20px;
+ 	padding: 10px;
+ }
+
+@mixin buttonz {
+	display: inline-block;
+	padding: 5px 45px;
+}
+ @mixin block-center {
+ 	margin: 0 auto;
+ }
+
+ @mixin transparent-button {
+ 	
+	border: 2px solid $default-color;
+	padding: 15px;
+	color: $default-color;
+	background: transparent;
+ }
+ @mixin linear-gradient($direction, $color-stops...) {
+  background: nth(nth($color-stops, 1), 1);
+  background: -webkit-linear-gradient(legacy-direction($direction), $color-stops);
+  background: linear-gradient($direction, $color-stops);
+}

@@ -1,0 +1,64 @@
+@mixin clearfix {
+	&:after {
+		clear: both;
+		display: block;
+		content:'';
+	}
+}
+
+@mixin image {
+	max-width: 100%;
+	height: auto;
+	display: inline-block;
+	vertical-align: top;
+}
+
+@mixin box-center {
+	margin: 0 auto;
+}
+
+@mixin un-lists{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+@mixin list-reset {
+	display: inline-block;
+	vertical-align: top;
+}
+@mixin border-rounded ($border-radius: '', $border:'', $background:'', $padding:'', $text-align:'', $color:''){
+	border-radius: $border-radius;
+	border: $border;
+	background: $background;
+	padding: $padding;
+	text-align: $text-align;
+	color: $color;
+}
+
+// @mixin anchor-tag($display:'', $padding:'', $text-decoration:''){
+// 	display:$display;
+// 	padding: $padding;
+// 	text-decoration:$text-decoration;
+// }
+
+@mixin resets-floats{
+	float: none;
+	width: auto;
+}
+
+@mixin background-color {
+
+background: rgb(106,190,152);
+background: -moz-radial-gradient(center, ellipse cover, rgba(106,190,152,1) 0%, rgba(106,190,152,1) 16%, rgba(106,190,152,1) 38%, rgba(106,190,152,1) 41%, rgba(72,164,123,1) 83%, rgba(72,164,123,1) 83%, rgba(106,190,152,1) 100%);
+background: -webkit-radial-gradient(center, ellipse cover, rgba(106,190,152,1) 0%,rgba(106,190,152,1) 16%,rgba(106,190,152,1) 38%,rgba(106,190,152,1) 41%,rgba(72,164,123,1) 83%,rgba(72,164,123,1) 83%,rgba(106,190,152,1) 100%);
+background: radial-gradient(ellipse at center, rgba(106,190,152,1) 0%,rgba(106,190,152,1) 16%,rgba(106,190,152,1) 38%,rgba(106,190,152,1) 41%,rgba(72,164,123,1) 83%,rgba(72,164,123,1) 83%,rgba(106,190,152,1) 100%);
+
+		}
+
+
+@mixin buttons {
+	border: 1px solid #fff;
+	padding: 15px 20px;
+	font-weight: bolder;
+}

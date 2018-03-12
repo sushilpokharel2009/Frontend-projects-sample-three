@@ -1,0 +1,48 @@
+html {
+	box-sizing:border-box;
+}
+*,*:before, *:after {
+	box-sizing:inherit;
+}
+body {
+	margin: 0;
+	font-family:$font-family;
+	min-width: 320px;
+	// background-image: url(../images/flowers1.jpg);
+	// opacity: .5;
+	// background-size: cover;
+	// background-color: #666;
+}
+// h1,h2,h3,h4,h5,h6 {
+// 	margin: 0 0 30px;
+// }
+// p {
+// 	margin: 0 0 20px;
+// }
+
+img {
+	@include image;
+}
+
+ul {
+	@include un-lists;
+}
+
+// #wrapper {
+// 	position: relative;
+// 	overflow: hidden;
+// 	width: 100%;
+// 	margin: 0;
+// }
+.container {
+	@include container-width;
+	@include clearfix;
+}
+
+.btn-orange{
+		padding: 5px 10px;
+		display: inline-block;
+		outline: 0;
+		background: orange;
+		color: #fff;
+	}

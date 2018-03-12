@@ -1,0 +1,24 @@
+.first{
+  padding: 10px;
+  background: orange;
+  min-height: 460px;
+  position: relative;
+  top: 30px;
+}
+.mybackground{
+
+height: 65px;
+background: red;
+position: absolute;
+opacity: 0.6;
+width: 98.4%;
+bottom: 10px;
+padding-right: 0px;
+
+
+}
+.mytext{
+    bottom: 30px;
+    position: absolute;
+    left: 100px;
+}

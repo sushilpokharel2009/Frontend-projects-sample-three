@@ -1,0 +1,69 @@
+.headroom {
+  position: fixed;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 5px 5px rgba(0,0,0,0.26);
+  z-index: 999;
+}
+.headroom+row {
+  margin-top: 100px;
+}
+.owl-carousel .item,
+.brick {
+  box-shadow: 0 3px 3px rgba(0,0,0,0.26);
+}
+.headroom--unpinned {
+  top: -150px;
+  visibility: hidden;
+}
+.headroom--pinned {
+  top: 0;
+  z-index: 100;
+}
+
+.owl-carousel .item {
+  background: #42bdc2;
+  padding: 10px;
+  margin: 5px;
+  color: #fff;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  text-align: center;
+}
+.layout {
+  position: relative;
+}
+.head {
+  margin: 1em 4em;
+}
+.free-wall {
+  margin: auto;
+  height: 100%;
+}
+.text-bottom {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: #fff;
+}
+.icontest:before {
+  font-family: "Segoe UI Symbol";
+  content: "U+E2A4";
+  display: inline-block;
+}
+.padding {
+  padding: 10px;
+}
+.size11 {
+  line-height: 184px;
+  text-align: center;
+}
+.size2-2 {
+  line-height: 85px;
+}
+
+
+
+
+

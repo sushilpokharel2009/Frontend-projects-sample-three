@@ -1,0 +1,187 @@
+.banner-section {
+		
+	.container {
+		margin: 50px auto 0;
+		padding: 0 20px;
+		
+	}	
+
+	a{
+		@include list-reset;
+		@include anchor-tag(inline-block,none);
+		position: relative;
+		padding-left: 50px;
+		color: darken($secondary-color, 70%);
+		text-decoration: none;
+
+		&:before{		
+			content:'\f1db';
+			font-family: FontAwesome;
+			font-style: normal;
+			font-weight: normal;
+			text-decoration: inherit;
+			position: absolute;
+			color: $theme-color;	
+			left: 0;
+			top: 0;
+			padding-right: 15px;
+
+
+			&:hover{
+				color: $hover-state-color;
+			}			
+		}
+
+
+		&:hover {
+			color: $hover-state-color;
+		}
+		
+	}
+	
+	.link-row {
+		padding-top: 12px;
+	}
+
+	.image-wrap {
+		float:  left;
+		width: calc(100% - 270px);
+		padding-right: 20px;
+		position: relative;
+	}
+	
+	.date-block {
+		height: 50px;
+		width: 50px;
+		background: $theme-color;
+		border-radius: 100%;
+		padding: 8px;
+		text-align: center;
+		position: absolute;
+		bottom: -25px;
+		right: 70px;
+		font-size: 15px;
+		color: $secondary-color;
+	}
+
+	.side-bar {
+		float: right;
+		width: 270px;
+	}
+
+	.search-form {
+		border: 1px solid #333;
+		@include clearfix;
+
+	}
+	
+	#input-field {
+		float: left;
+		border: 0;
+		outline: none;
+		width: calc(100% - 40px);
+		height: 35px;
+	}
+
+	.btn{
+		float: right;
+		background: blue;
+		width: 40px;
+		outline: none;
+		border: 0;
+		color: #fff;
+		height: 35px;		
+	}
+
+	.content-list {
+		margin-top:30px;
+	}
+	
+	h3 {
+		margin-bottom: 10px;
+	}
+
+	@media screen and (max-width: 992px){
+
+		.content-list {
+			margin-top:5px;
+		}
+		
+		.link-row {
+			padding-top: 10px;
+		}
+
+	}
+		
+		@media screen and (max-width: 767px){
+
+			.image-wrap {
+				float: none;
+			    width: 100%;
+			    padding-right: 0; 
+				
+			}
+
+			.side-bar {
+				float: none;
+				width: auto;
+			}
+
+			.search-form {
+				margin-top: 30px;
+
+			}
+
+
+			#input-field {
+			
+				height:45px;
+			}
+
+
+			.content-list {
+				margin-top:40px;
+				margin-left: 50px;
+			}
+		
+			.link-row {
+				padding-top: 5px;
+			}
+
+
+			.btn {
+				height: 45px;
+			}
+
+			a {		
+			    background: darken(red, 10%);
+			    padding:15px 0 15px 70px;
+			    width: 100%;
+			    color: #fff;
+
+
+			    &:before{		
+							
+					top: 15px;
+					left: 15px;		
+				}
+			}
+
+
+			.link-wrap {
+				border-left: 5px solid lighten(blue,30%);
+    			padding-left: 30px;
+			}
+		}
+
+
+
+		@media screen and (max-width: 640px){
+			background: lighten(#00ff99, 40%);
+
+			.container {
+				margin: 0;
+			}
+		}
+
+}

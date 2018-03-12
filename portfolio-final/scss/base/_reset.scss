@@ -1,0 +1,37 @@
+html {
+	box-sizing:border-box;
+}
+*,*:before, *:after {
+	box-sizing:inherit;
+}
+body {
+	margin: 0;
+	font-family:$font-family;
+	min-width: 320px;
+}
+h1,h2,h3,h4,h5,h6 {
+	margin: 0 0 30px;
+}
+p {
+	margin: 0 0 20px;
+}
+
+img {
+	@include image;
+}
+
+ul {
+	@include un-lists;
+}
+
+.wrapper {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	margin: 0;
+}
+.container {
+	@include container-width;
+	@include clearfix;
+}
+

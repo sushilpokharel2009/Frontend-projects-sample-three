@@ -1,0 +1,35 @@
+.range-holder {
+	margin-top: 30px;
+
+	h4 {
+		text-align: center;
+		overflow: hidden;
+		font-size: 18px;
+		font-weight: bolder;
+		color: $theme-color;
+	}
+
+	.holder {
+		position: relative;
+		padding: 0 5px;
+	}
+
+	.holder:after,
+	.holder:before {
+		position: absolute;
+		top: 50%;
+		content: '';
+		height: 1px;
+		background: lighten(#000, 80%)
+	}
+
+	.holder:after {
+		left: 100%;
+		right: -9999px;
+	}
+
+	.holder:before {
+		right: 100%;
+		left: -9999px;
+	}
+}

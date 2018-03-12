@@ -1,0 +1,72 @@
+	.main-slider{
+		padding: 30px 0;
+		background: #00ffb8;
+	}
+
+
+	.carousel-indicators {
+		padding-left: 10px !important;
+
+		li,.active {
+			background: #f4aa42;
+			max-width: 5px;
+			height: 5px;
+			border-radius: 100%;
+			padding: 5px;
+		}
+	} 
+
+
+	.carousel-control-next, .carousel-control-prev {
+		// position: relative;
+		opacity: 1;
+	}
+
+	
+	.carousel-control-prev:after {
+		position: absolute;
+	    // left: -30px;
+	    content: '\f053';
+	    // bottom: 275px;
+	    height: 30px;
+	     color: red;
+	    font-weight: bolder;
+	    font-family: FontAwesome;
+	    font-style: normal;
+	    font-weight: normal;
+	    text-decoration: inherit;
+		left: 10px;
+
+
+
+	}
+
+	.carousel-control-next:after {
+		position: absolute;
+	    // right: -900px;
+	    content: '\f054';
+	    // bottom: 275px;
+	    height: 30px;
+	    color: red;
+	    font-weight: bolder;
+	    font-family: FontAwesome;
+	    font-style: normal;
+	    font-weight: normal;
+	    text-decoration: inherit;
+	    right: 0;
+	}
+
+
+	.carousel-item {
+		.content {
+			padding-left: 65px;
+		}
+	}
+
+	.color-orange {
+		color: orange;
+	}
+
+	
+
+

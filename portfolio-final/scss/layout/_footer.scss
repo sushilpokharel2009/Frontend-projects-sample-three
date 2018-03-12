@@ -1,0 +1,90 @@
+
+
+.fader {
+  content: '';
+  position: fixed;
+ 
+  opacity: .9;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+
+.flex-aligner {
+  display: flex;
+  position: relative;
+  z-index: 10;
+  transform: matrix(.8, -0.3, 0, 2, 0, 0);
+}
+
+.wrap {
+  position: relative;
+  width: 260px;
+  overflow: hidden;
+  box-shadow: 0px 5px 10px #000;
+  transition: border-radius .4s ease-out;
+   margin-top: 80px;
+  border: 10px solid lighten(red, 20%);
+  transform: rotate(15deg);
+  margin-top: 0;
+
+    text-align: center;
+    font-weight: bolder;
+    background: #f7f7f9;
+    border: red;
+  
+  &:hover {
+    cursor: move;
+    border-radius: 50%;
+    .normal {
+      opacity: 0;
+      transform: scale(1.1);
+    }
+    .plus {
+      opacity: 0;
+      transform: scale(.8);
+    }
+  }
+}
+
+.img {
+
+  &:hover {
+    border-radius: 50%;
+  }
+}
+
+.normal {
+  z-index: 20;
+  background-size: contain;
+}
+
+img.normal {
+  opacity: 0;
+  width: 100%;
+}
+
+.zoom {
+  z-index: 10;
+  transition: none;
+}
+
+.plus {
+  position: absolute;
+  transition: all ease-out .4s;
+  width: 60px;
+  height: 60px;
+  z-index: 30;
+  left: calc(50% - 30px);
+  top: calc(50% - 30px);
+}
+.copy-right {
+  text-align: center;
+  padding: 40px 0 0;
+  border-top: 2px solid darken(#eee, 70%);
+}
+
+
+
+  

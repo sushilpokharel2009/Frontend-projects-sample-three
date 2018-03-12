@@ -1,0 +1,200 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Minimal Sliding Mobile Menu Demo</title>
+<style>
+body {
+  width: 100%;
+  overflow: hidden;
+  background: #fafafa;
+  font-family:'Roboto'
+}
+
+
+h1 {
+  font-size: 3rem;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+.text {
+  max-width: 800px;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+}
+
+.mobile-nav-button {
+  width: 35px;
+  position: absolute;
+  margin: 2rem;
+  right: 0;
+  top: 0;
+  z-index: 9999;
+  cursor: pointer;
+  width: 35px;
+  height: 30px;
+}
+
+.mobile-nav-button .mobile-nav-button__line {
+  width: 100%;
+  height: 4px;
+  background: #0e0e0e;
+  position: relative;
+  transition: 1s ease;
+}
+
+.mobile-nav-button .mobile-nav-button__line:nth-of-type(2) { margin: 0.5rem 0; }
+
+.mobile-nav-button .mobile-nav-button__line--1 {
+  transform: rotate(45deg);
+  top: 13px;
+  position: absolute;
+}
+
+.mobile-nav-button .mobile-nav-button__line--2 { display: none; }
+
+.mobile-nav-button .mobile-nav-button__line--3 {
+  transform: rotate(135deg);
+  top: 13px;
+  position: absolute;
+}
+
+.mobile-menu {
+  display: block;
+  max-width: 500px;
+  width: 100%;
+  right: -100%;
+  height: 100vh;
+  background: #fcb852;
+  position: absolute;
+  z-index: 9998;
+  transition: 0.6s ease;
+  top: 0;
+  opacity: 0;
+}
+
+.mobile-menu ul {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0;
+}
+
+.mobile-menu ul li { list-style: none; }
+
+.mobile-menu ul li a {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: #0e0e0e;
+  font-size: 3rem;
+  font-weight: bold;
+  overflow: hidden;
+  position: relative;
+}
+
+.mobile-menu ul li a:after {
+  content: '';
+  background: #0e0e0e;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: -100%;
+  top: 0;
+  z-index: -1;
+  transition: 0.4s ease;
+}
+
+.mobile-menu ul li a:hover { color: #fff; }
+
+.mobile-menu ul li a:hover:after { right: 0; }
+
+.mobile-menu img {
+  position: absolute;
+  width: 150px;
+  display: block;
+  left: 50%;
+  top: 3rem;
+  transform: translatex(-50%);
+  padding: 0;
+  text-align: center;
+}
+
+.mobile-menu--open {
+  right: 0;
+  opacity: 1;
+}
+</style>
+</head>
+
+<body>
+<header>
+  <div class="mobile-nav-button">
+    <div class="mobile-nav-button__line"></div>
+    <div class="mobile-nav-button__line"></div>
+    <div class="mobile-nav-button__line"></div>
+  </div>
+  <nav class="mobile-menu">
+    <ul>
+      <li><a>Home</a></li>
+      <li><a>About</a></li>
+      <li><a>Blog</a></li>
+      <li><a>Contact</a></li>
+    </ul>
+  </nav>
+</header>
+<section class="text">
+  <h1>Minimal Sliding Mobile Menu Demo</h1>
+  <div class="jquery-script-ads"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-2783044520727903";
+/* jQuery_demo */
+google_ad_slot = "2780937993";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quam urna, bibendum sed risus vel, tempus porttitor neque. Donec viverra, quam et vestibulum molestie, justo tortor viverra nunc, a ullamcorper dui nulla ut nisi. Proin a pulvinar nisl. Duis nec bibendum odio, at vehicula felis. Cras eu orci ac libero sollicitudin dignissim. Integer risus ipsum, pretium ac urna id, porta varius dui. Aliquam non scelerisque justo. Sed aliquam vel tellus sed sollicitudin.</p>
+  <p>Cras lacinia sapien ac fermentum sodales. Morbi ut dui non massa luctus porta. Curabitur luctus cursus ex, sed pellentesque leo viverra at. Fusce at libero ac ipsum porttitor varius. Fusce hendrerit libero ut dui molestie aliquet. Aliquam luctus ipsum pulvinar, sollicitudin odio nec, pulvinar odio. Ut sodales ligula nisl, a congue libero pretium et. Integer vitae mi est. Cras ornare libero id odio auctor ullamcorper. Quisque eu orci quis lorem condimentum ornare. Praesent eget elit eros. Etiam id commodo magna.</p>
+  <p>Donec semper fermentum metus, et pretium tellus ultricies at. Aenean iaculis leo a est mattis vestibulum. Sed non nibh congue, tempor nisl aliquam, pretium velit. Aenean sed lectus vitae nibh suscipit varius ac eget libero. Praesent eu euismod odio, eget dictum diam. Phasellus in mauris scelerisque, hendrerit quam sit amet, sodales erat. Nulla venenatis nulla ut ipsum sagittis blandit. In faucibus nisi vitae justo consequat, et convallis tellus molestie. Duis laoreet mauris eget nulla gravida maximus. Cras tempor sapien et pretium tempus. Morbi quis aliquam mi.</p>
+</section>
+<script src="http://code.jquery.com/jquery-3.1.1.slim.min.js"></script> 
+<script>
+$(document).ready(function () {
+  $('.mobile-nav-button').on('click', function() {
+  $( ".mobile-nav-button .mobile-nav-button__line:nth-of-type(1)" ).toggleClass( "mobile-nav-button__line--1");
+  $( ".mobile-nav-button .mobile-nav-button__line:nth-of-type(2)" ).toggleClass( "mobile-nav-button__line--2");  
+  $( ".mobile-nav-button .mobile-nav-button__line:nth-of-type(3)" ).toggleClass( "mobile-nav-button__line--3");  
+  
+  $('.mobile-menu').toggleClass('mobile-menu--open');
+  return false;
+}); 
+});
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>

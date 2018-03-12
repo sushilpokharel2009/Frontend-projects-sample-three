@@ -1,0 +1,17 @@
+.pager {
+	margin: 0 -10px;
+	overflow: hidden;
+
+	.pager-previous,
+	.pager-next {
+		padding: 0 10px;
+		width: 50%;
+		float: left;
+
+		a {
+			display: block;
+			padding: 10px;
+			border: 1px solid #333;
+		}
+	}
+}

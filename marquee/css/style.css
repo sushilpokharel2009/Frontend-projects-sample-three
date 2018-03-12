@@ -1,0 +1,18 @@
+.header-top{
+  background: #CCC;
+  padding: 10px 0px;
+}
+.menu{
+  margin-top: 15px;
+}
+.slide-text{
+  background: red;
+  padding: 5px;
+}
+marquee{
+  color: #FFF;
+  font-weight: bolder;
+}
+.contain{
+  background: #CCC;
+}

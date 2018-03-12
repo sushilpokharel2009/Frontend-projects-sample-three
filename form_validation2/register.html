@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="1404.47">
+  <style type="text/css">
+  </style>
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/css/bootstrap-datepicker.css">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/js/bootstrap-datepicker.js"></script>
+  <script type="text/javascript" src="Js/script.js"> </script>
+  <script type="text/javascript" src="Js/parsley.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/parsley.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+  <div class="col-md-12">
+      <div class="text-center well-lg register">Register Form</div>
+        <form class="" action="index.html" method="post" id="my_form">
+      <div class="form-group">
+          <label for="">Name</label>
+          <input type="text" name="" value="" id="name_" class="form-control">
+          <p class="error" id="name_error">Enter your name</p>
+      </div>
+      <div class="form-group">
+          <label for="">Email</label>
+          <input type="email" name="email" value="" id="email_" class="form-control">
+          <p class="error" id="email_error">Enter your email</p>
+      </div>
+      <div class="form-group">
+          <label for="">Password</label>
+          <input type="password" name="" value="" id="password_" class="form-control">
+          <p class="error" id="password_error">Enter your  password</p>
+      </div>
+      <div class="form-group">
+          <label for="">Retype Password</label>
+          <input type="password" name="" value="" id="rpassword_" class="form-control">
+          <p class="error" id="rpassword_error">Password must match</p>
+      </div>
+
+      <div class="form-group">
+            <label for="">Current Employer</label>
+            <input type="text" name="" value="" id="cemployer_" class="form-control">
+            <p class="error" id="cemployer_error">Enter your current employer name</p>
+      </div>
+      <div class="form-group">
+            <label for="">Current Employer Address</label>
+            <div class="row">
+              <div class="col-lg-11" id="emp">
+            <input type="text" name="" value="" id="cemployerAdd_" class="form-control">
+            <p class="error" id="cemployerAdd_error">Enter your current employer address</p>
+          </div>
+          <div class="col-lg-1">
+            <span class="glyphicon glyphicon-plus-sign" id="plus" >
+          </div>
+          </div>
+      </div>
+
+      <div class="form-group">
+            <label for="">Previous Employer</label>
+            <div class="row">
+              <div class="col-lg-11" id="emp1">
+            <input type="text" name="" value="" id="pemployer_" class="form-control">
+            <p class="error" id="pemployer_error">Enter your previous employer name</p>
+          </div>
+          <div class="col-lg-1">
+            <span class="glyphicon glyphicon-plus-sign" id="plus1" >
+          </div>
+          </div>
+    </div>
+      <div class="form-group">
+            <label for="">Previous Employer Address</label>
+            <div class="row">
+            <div class="col-lg-11" id="emp2">
+            <input type="text" name="" value="" id="pemployerAdd_" class="form-control">
+            <p class="error" id="pemployerAdd_error">Enter your previous employer address</p>
+            </div>
+            <div class="col-lg-1">
+            <span class="glyphicon glyphicon-plus-sign" id="plus2" >
+            </div>
+            </div>
+      </div>
+      <div class="">
+          <label for="">Date</label><br>
+          <input type="text" name="" value="" class="datepicker form-control" id="date">
+      </div><br>
+      <div class="form-group">
+          <label for="">Country</label><br>
+          <select class="" name="" id="select_">
+          <option value="">Select a country</option>
+          <option value="np">Nepal</option>
+          <option value="ind">India</option>
+          <option value="bh">Bhutan</option>
+          <option value="Islamabad">Pakistan</option>
+          <option value="new">USA</option>
+          <option value="gr">Germany</option>
+          <option value="London">UK</option>
+          <option value="Doha">Quatar</option>
+          <option value="ma">Malaysia</option>
+        </select>
+      </div>
+      <div class="form-group" id="myKtm">
+        <label for="">City</label><br>
+        <select class="" name="" id="selectKtm">
+          <option value="ktm">Kathmandu</option>
+          <option value="lt">Lalitpur</option>
+          <option value="bhk">Bhaktapur</option>
+        </select>
+        <select class="" name="" id="selectIndian">
+          <option value="del">Delhi</option>
+          <option value="pun">Punjab</option>
+          <option value="bi">Bihar</option>
+        </select>
+        <select class="" name="" id="selectNw">
+          <option value="ny">New York</option>
+          <option value="tx">Texas</option>
+          <option value="colo">Colorado</option>
+        </select>
+      </div>
+      <div class="">
+        <button type="submit" name="button" id="btn">Submit</button>
+        <button type="reset" name="reset" id="btn" class="btn-success">Reset</button>
+      </div>
+    </form>
+    </div>
+  </div>
+  <div class="" id="append" hidden="hidden">
+    <input type="text" name="" value="" class="form-control" >
+  </div>
+  <div class="" id="append1" hidden="hidden">
+    <input type="text" name="" value="" class="form-control" >
+  </div>
+  <div class="" id="append2" hidden="hidden">
+    <input type="text" name="" value="" class="form-control" >
+  </div>
+</body>
+</html>

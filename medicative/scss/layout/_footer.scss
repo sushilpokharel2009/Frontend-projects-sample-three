@@ -1,0 +1,303 @@
+.footer-section {
+		background:$menu-bar-color; 
+		padding: 100px 0;
+
+	.two-colums {
+		@include clearfix;
+	}
+
+	img {
+			margin-bottom: 70px;
+		}
+
+	.colums {
+		display: inline-block;
+		vertical-align: top;
+		@include clearfix;
+		width: 49%;
+		color:#fff;
+		line-height: 15px;
+	}
+
+	.medicative-block {
+		float: left;
+		width: 49%;
+
+		.contact-block, .email-block,.address-block {
+			padding: 20px 0;
+		}
+
+		a {
+			display: inline-block;
+			vertical-align: top;
+			line-height: 30px;
+		}
+	}
+
+	.links-block {
+		float: right;
+		width: 49%;
+		padding-left: 40px;
+
+		a {
+			padding: 0 0 30px;
+			display: inline-block;
+			text-decoration: none;
+			transition: all .4s linear;
+
+			&:hover {
+				color: lighten($theme-color, 20%);
+			}
+		}
+	}
+
+	.gallery-block {
+		float: left;
+		width: 49%;
+	}
+
+	.subscribe {
+		float: right;
+		width: 49%;
+	}
+
+	a {
+		color: #fff;
+		text-decoration: none;
+	}
+
+	.icons {
+		
+		padding: 30px 0;
+
+		ul {
+			@include clearfix;
+		}
+
+		li {
+			@include list-reset;
+		}
+
+		a {
+			background: lighten($menu-bar-color,3%);
+			height: 30px;
+			width: 30px;
+			border-radius: 100%;
+			padding: 7px;
+			display: inline-block;
+			text-align: center;
+			padding-right: 15px;
+
+			&:hover {
+				background: $theme-color;
+			}
+		}
+	}
+	
+	p {
+		line-height: 30px;
+
+	}
+
+	.inner {
+
+		li {
+			@include list-reset;
+			width: 32%;
+		}
+
+		a {
+			display: inline-block;
+			padding: 5px;
+			position: relative;
+
+			&:hover .search-icon{
+				transform:scale(1);
+			}
+			
+		}
+		img {
+			margin-bottom: 0;
+
+		}
+		
+		.search-icon {
+			position: absolute;
+			top: 0;
+			right: 0;
+			left: 0;
+			bottom: 0;
+			background:$theme-color;
+			transform:scale(0);
+			transition: all .4s linear;
+			color: $secondary-color;
+			display: inline-block;
+			padding: 30px;
+			text-align: center;
+
+		}
+	}
+
+	.subscribe-mini {
+
+		.search-form {
+			background: lighten($menu-bar-color, 5%);
+			padding: 15px;
+			@include clearfix;
+			margin: 20px 0;
+		}
+
+		._email {
+			float: left;
+			background: none;
+			border: 0;
+			outline: none;
+		}
+
+		.btn {
+			float: right;
+			background: none;
+			color: #fff;
+			border: 0;
+			outline: none;
+		}
+	}
+
+
+		@media screen and (max-width: 992px){
+
+			padding: 70px 0;
+
+			img {
+				margin-bottom: 60px;
+				}
+
+			.colums {
+				
+				line-height: 10px;
+			}
+	
+			p {
+				line-height: 30px;
+			}
+
+
+
+			.medicative-block {
+
+				.contact-block, .email-block,.address-block {
+					padding: 10px 0;
+
+
+					i {
+						padding-right: 10px;
+					}
+				}
+			}
+
+			.inner {
+
+				li {
+					
+					width: 30%;
+				}		
+			}
+
+			.subscribe-mini {
+				font-weight: 300;	
+				font-size: 15px;
+				font-family: 'Montserrat';
+
+				.search-form {
+					padding: 12px;
+				}				
+			}
+
+			.icons {
+				a {
+					margin-right: 0;
+					padding: 6px;
+				}
+			}
+		}
+
+
+		@media screen and (max-width: 767px){	
+
+			img {
+				margin-bottom: 30px;
+			}
+
+			.colums {
+				display:block;
+				width: auto;		
+				line-height: 10px;
+				margin-left: 20px;
+				border-bottom: 5px solid darken(#fff, 70%);
+				padding: 30px 0;
+			}
+
+			h3 { 
+				font-size: 18px;
+			}
+
+		}
+
+
+		@media screen and (max-width: 480px){
+			text-align: center;
+			background:lighten($menu-bar-color,30%); 
+			padding: 10px 0;			
+
+			img {
+				margin-bottom: 20px;
+			}
+
+			.colums {
+				box-shadow: 20px 10px 10px 0 rgba(1,2,1,.3);
+				line-height: 5px;
+			}
+
+			.medicative-block {
+				float: none;
+				width: 100%;
+
+				.contact-block, .email-block,.address-block {
+					padding: 5px 0;
+				}
+			}
+
+			.links-block {
+				float: none;
+			    width: 100%;
+			    padding-left: 0;
+
+				h3 {
+					margin-top: 30px;
+				}
+			}
+
+			.gallery-block {
+				float: none;
+				width: 100%;
+			}
+
+			.subscribe {
+				float: none;
+				width: 100%;
+
+				h3 {
+					margin-top: 30px;
+				}
+
+			.subscribe-mini {
+
+				.search-form {
+					margin-right: 20px;
+				}
+			}
+
+		}
+
+	}
+}

@@ -1,0 +1,23 @@
+.sliders {
+	// background:#fff !important;
+	width: 100% !important;
+	opacity: .92;
+
+
+	.carousel {
+		max-width: 640px;
+		margin: 0 auto;
+	}
+
+	p {
+		text-align: center;
+		padding: 20px 0;
+		font-size: 30px !important;
+		font-weight: bolder;
+	}
+
+	img {
+		max-height: 500px;
+		width: 100%;
+	}
+}

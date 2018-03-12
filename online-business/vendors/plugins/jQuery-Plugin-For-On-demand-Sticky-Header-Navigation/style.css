@@ -1,0 +1,16 @@
+body, html {
+    height: 100%;
+}
+
+#header, #content, #footerr  {
+    margin: 0 auto;
+    max-width: 960px;
+    width: 100%;
+}
+
+#sticky-header {
+    background: #e74c3c;
+    width: 100%;
+    padding:0 20px;
+    color:#fff;
+}

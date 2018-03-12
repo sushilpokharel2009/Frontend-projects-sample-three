@@ -1,0 +1,53 @@
+@mixin clearfix {
+	&:after {
+		clear: both;
+		display: block;
+		content:'';
+	}
+}
+
+@mixin image {
+	max-width: 100%;
+	height: auto;
+	display: inline-block;
+	vertical-align: top;
+}
+
+@mixin box-center {
+margin: 0 auto;
+}
+
+@mixin un-lists{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+@mixin list-reset {
+	display: inline-block;
+	vertical-align: top;
+}
+@mixin border-rounded ($border-radius: '', $border:'', $background:'', $padding:'', $text-align:'', $color:''){
+	border-radius: $border-radius;
+	border: $border;
+	background: $background;
+	padding: $padding;
+	text-align: $text-align;
+	color: $color;
+}
+
+@mixin anchor-tag($display:'', $padding:'', $text-decoration:''){
+	display:$display;
+	padding: $padding;
+	text-decoration:$text-decoration;
+}
+
+@mixin resets-floats{
+	float: none;
+	width: auto;
+}
+@mixin container-width {
+		max-width: 1170px;
+		margin: 0 auto;
+		padding: 10px 20px;
+}

@@ -1,0 +1,49 @@
+.simplefilter {
+	background:darken(#000, 60%);
+	margin: 50px 0;
+
+
+	.filterz{
+		background: none;
+		padding:10px;
+	}
+
+	li {
+		margin-right: -5px;
+
+		&.active {
+			background-color: orange;
+		}
+
+		&:hover {
+			background: orange;
+		}
+	}
+
+}
+
+// .border {
+// 	width: 200px;
+// }
+
+.filter-container {
+	margin-top: 50px;
+}
+
+	@media (max-width: 991px){
+		.filterz {
+			font-size: 14px;
+		}
+	}
+
+	.border{
+		padding: 20px;
+		border: 1px solid lighten(#000,80%);
+		text-align: center;
+	}
+
+	.filtr-item {
+
+		//margin: 0 -20px
+	}
+

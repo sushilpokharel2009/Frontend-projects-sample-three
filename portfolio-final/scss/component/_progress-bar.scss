@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300&subset=latin-ext');
+
+
+
+.wykresy {
+  vertical-align: middle;
+  flex: 1 1 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: middle;
+  justify-content: middle;
+  font-size: 10px;
+}
+
+#chart1, #chart2, #chart3, #chart4, #chart5, #chart6  {
+ 
+  width: 150px;
+  height: 150px;
+  line-height: 30px;
+  position: relative;
+  text-align: center;
+  font-size: 17px;
+  font-weight: bolder;
+}
+
+.progressbar-text:after {
+  content: '%';
+  font-size: 1.2rem;
+  vertical-align: super;
+}
+
+// .progressbar-text {
+//    position: absolute;
+//     top: 41% !important;
+//     padding: 0px;
+//     margin: -1.3rem 0px 0px !important;
+//     transform: translate(-50%, -50%);
+//     color: rgb(0, 170, 255);
+//     font-family: Raleway, Helvetica, sans-serif;
+//     font-size: 2.5rem;
+
+// }

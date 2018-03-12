@@ -1,0 +1,48 @@
+.one{
+  background:  #70dbdb;
+  color: white;
+  padding: 10px;
+}
+.two{
+  background: #f0f5f5;
+  margin-bottom: 1px solid #f0f5f5;
+  padding: 10px;
+}
+.medicio{
+  background-image: url("Australia.jpg");
+}
+.medicio{
+  position: relative;
+  height: 590px;
+
+}
+.medi-text{
+  position: absolute;
+  top: 30px;
+}
+.afford-body{
+  border: 0px solid #fff;
+width: 400px;
+  position: absolute;
+  top:240px;
+  height: 450px;
+  /*right: 600px;*/
+}
+.learn-more{
+  position: absolute;
+  top: 380px;
+  left: 260px;
+}
+.nurse{
+  position: relative;
+  /*float: right;
+  top: 230px;
+  right: 50px;*/
+
+}
+.nurse2{
+  position: absolute;
+/*  float: right;*/
+  top: -450px;
+  right: -600px;
+}

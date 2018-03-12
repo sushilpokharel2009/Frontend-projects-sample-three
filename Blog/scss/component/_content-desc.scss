@@ -1,0 +1,43 @@
+.content-description {
+	border-left: 10px solid #ccc;
+	padding-left: 50px;
+
+	h3 {
+		text-align: center;
+		overflow: hidden;
+		font-size: 25px;
+		margin-bottom: 25px;
+		font-weight: bolder;
+		color: darken(#000, 100%);
+	}
+	.text {
+		position: relative;
+		padding: 0 10px;
+
+		&:after,
+		&:before {
+			position: absolute;
+			content: '';
+			top: 50%;
+			height: 2px;
+			background: orange;
+		}
+
+		&:after {
+			left: 100%;
+			right: -999px;
+		}
+
+		&:before {
+			right: 100%;
+			left: -999px;
+		}
+	}
+
+	iframe {
+	    border: 25px solid #ccc;
+	}
+	.description-second {
+		margin: 30px 0;
+	}
+}
